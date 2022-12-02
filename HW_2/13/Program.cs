@@ -11,7 +11,7 @@ int num = int.Parse(Console.ReadLine()!);
 int numTemp = num;
 int count = 0;
 
-while (numTemp > 0)
+while (Math.Abs(numTemp) > 0)   //код позволяет проверять отрицательные числа
 {
   numTemp /= 10;
   count++; 
@@ -20,8 +20,8 @@ while (numTemp > 0)
 if (count - 3 >= 0)
 {
     var rank = Math.Pow(10, count - 3);
-    var num3 = Math.Floor(num / rank % 10);
-    Console.WriteLine($"Третья цифра числа {num} - {num3}");
+    var num3 = Math.Truncate(num / rank % 10);
+    Console.WriteLine($"Третья цифра числа {num} = {Math.Abs(num3)}");
 }
 else
 {
