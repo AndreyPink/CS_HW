@@ -1,4 +1,11 @@
-﻿Console.WriteLine("Введите слово:");
+﻿// Напишите программу, которая принимает на вход 
+// пятизначное число и проверяет, является ли оно палиндромом.
+// 14212 -> нет
+// 12821 -> да
+// 23432 -> да
+
+
+Console.WriteLine("Введите на вход любую строку или число:");
 string text = Console.ReadLine()!;
 int len = text.Length;
 if(text.Length % 2 == 0)
@@ -8,9 +15,9 @@ if(text.Length % 2 == 0)
     string text2rev = new string(text2.ToCharArray().Reverse().ToArray());
     if(text1 == text2rev)
     {
-        Console.WriteLine($"Слово {text} Является палиндромом");
+        Console.WriteLine($"Строка {text} Является палиндромом");
     }
-    else {Console.WriteLine($"Слово {text} Не является палиндромом");}
+    else {Console.WriteLine($"Строка {text} Не является палиндромом");}
 }
 else
 {
@@ -19,8 +26,8 @@ else
     string text2rev = new string(text2.ToCharArray().Reverse().ToArray());
     if(text1 == text2rev)
     {
-        Console.WriteLine($"Слово {text} Является палиндромом");
+        Console.WriteLine($"Строка {text} Является палиндромом");
     }
-    else {Console.WriteLine($"Слово {text} Не является палиндромом");}
+    else {Console.WriteLine($"Строка {text} Не является палиндромом");}
 }
 
