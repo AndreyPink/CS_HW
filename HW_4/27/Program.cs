@@ -10,8 +10,8 @@ int CountNum(int num)
     while (num > 0)
     {
         int x =num%10;
-        num /= 10;
         sum += x;
+        num /= 10;
     }
     return sum;
 }
