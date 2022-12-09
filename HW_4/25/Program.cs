@@ -6,7 +6,6 @@
 
 int NumPow(int A, int B)
 {
-     
     int pow = (int)Math.Pow(A, B);
     return pow;
 }
