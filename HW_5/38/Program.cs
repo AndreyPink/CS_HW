@@ -5,12 +5,13 @@
 double[] CreateArray()
 {
     double[] array = new double[5];
+    Console.Write("Массив {");
     for (int i = 0; i < 5; i++)
     {
-        array[i] = Math.Round(new Random().NextDouble(), 2);
+        array[i] = new Random().Next(1,10) + Math.Round(new Random().NextDouble(), 2);
         Console.Write($"{array[i]} ");
     }
-    Console.WriteLine("\n");
+    Console.WriteLine("}\n");
     return array;
 }
 

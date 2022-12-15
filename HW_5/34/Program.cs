@@ -4,13 +4,14 @@
 
 int[] CreateArray()
 {
+    Console.Write("Массив {");
     int[] array = new int[4];
     for (int i = 0; i < 4; i++)
     {
         array[i] = new Random().Next(100, 1000);
         Console.Write($"{array[i]} ");
     }
-    Console.WriteLine("\n");
+    Console.WriteLine("}\n");
     return array;
 }
 
