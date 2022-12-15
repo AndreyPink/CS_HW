@@ -8,7 +8,7 @@ double[] CreateArray()
     Console.Write("Массив {");
     for (int i = 0; i < 5; i++)
     {
-        array[i] = new Random().Next(1,10) + Math.Round(new Random().NextDouble(), 2);
+        array[i] = 100* Math.Round(new Random().NextDouble(), 4);
         Console.Write($"{array[i]} ");
     }
     Console.WriteLine("}\n");
