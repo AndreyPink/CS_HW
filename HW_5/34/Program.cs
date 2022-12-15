@@ -16,11 +16,11 @@ int[] CreateArray()
 
 void Count(int[] myArray)
 {
-    int sum = 0;
+    int count = 0;
     foreach (int elem in myArray)
     {
-        if (elem % 2 == 0) sum++;
+        if (elem % 2 == 0) count++;
     }
-    Console.WriteLine($"Кол-во четных чисел {sum}");
+    Console.WriteLine($"Кол-во четных чисел {count}");
 }
 Count(CreateArray());
