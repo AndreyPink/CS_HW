@@ -8,7 +8,8 @@ void InterPoint(double b1, double k1, double b2, double k2)
 {
 double x = (b2 - b1)/(k1 - k2);
 double y = k1 * x + b1;
-Console.WriteLine($"Точка пересечения имеет координаты ({x}; {y})");
+if(k1 == k2 && b1 != b2) Console.WriteLine($"Прямые параллельны, точки пересечения нет");
+else Console.WriteLine($"Точка пересечения имеет координаты ({x}; {y})");
 }
 
 Console.WriteLine("Введите значения b1, k1, b2, k2, после каждого нажав ВВОД: ");
