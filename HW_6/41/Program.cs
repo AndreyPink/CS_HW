@@ -13,7 +13,7 @@ void CountPosNumbers(string[] listNum)
         if (int.Parse(elem) > 0) count++;
         Console.Write($"{elem} ");
     }
-    Console.WriteLine($"\nПользователь ввел следующее кол-во чисел больше 0 - {count}");
+    Console.WriteLine($"\nКол-во чисел > 0 = {count}");
 }
 
 Console.WriteLine("Введите произвольный список целых чисел через пробел или запятую: ");
