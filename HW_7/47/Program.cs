@@ -13,7 +13,7 @@ for (int rows = 0; rows < matrix.GetLength(0); rows++)
 {
     for (int columns = 0; columns < matrix.GetLength(1); columns++)
     {
-        matrix[rows, columns] = Math.Round(new Random().NextDouble()*10, 1);
+        matrix[rows, columns] = new Random().Next(-9, 10) + Math.Round(new Random().NextDouble(), 1);
         Console.Write($"{matrix[rows, columns]}  ");
     }
     Console.WriteLine("");
