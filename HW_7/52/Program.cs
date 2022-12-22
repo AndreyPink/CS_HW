@@ -32,7 +32,7 @@ void Average(int[,] array)
             sumElem += array[rows, column];
         }
         double averageElem = Math.Round(sumElem/array.GetLength(0), 1);
-        Console.Write($"{sumElem/array.GetLength(0)} ");
+        Console.Write($"{averageElem} ");
     }
 }
 
