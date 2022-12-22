@@ -1,37 +1,5 @@
-﻿using System;
+﻿
 // Задача 60: Заполните спирально массив 4 на 4.
-
-// !!РАЗОБРАТЬСЯ КАК РАБОТАЕТ ЭТОТ МЕТОД!!
-// int[,] Spiral(int n)
-// {
-//     int[,] result = new int[n, n];
-
-//     int pos = 1;
-//     int count = n;
-//     int value = -n;
-//     int sum = -1;
-
-//     do
-//     {
-//         value = -1 * value / n;
-//         for (int i = 0; i < count; i++)
-//         {
-//             sum += value;
-//             result[sum / n, sum % n] = pos++;
-//         }
-//         value *= n;
-//         count--;
-//         for (int i = 0; i < count; i++)
-//         {
-//             sum += value;
-//             result[sum / n, sum % n] = pos++;
-//         }
-//     } while (count > 0);
-
-//     return result;
-// }
-
-
 
 void PrintArray(int[,] matrix)
 {
@@ -46,8 +14,6 @@ void PrintArray(int[,] matrix)
     }
     Console.WriteLine();
 }
-
-// PrintArray(Spiral(4));
 
 int[,] Spiral(int n)
 {
