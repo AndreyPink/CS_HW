@@ -16,7 +16,7 @@ for (int rows = 0; rows < matrix.GetLength(0); rows++)
         matrix[rows, columns] = new Random().Next(-9, 10) + Math.Round(new Random().NextDouble(), 1);
         Console.Write($"{matrix[rows, columns]}  ");
     }
-    Console.WriteLine("");
+    Console.WriteLine();
 }
 }
 Console.WriteLine("Введите размер массива M: ");
