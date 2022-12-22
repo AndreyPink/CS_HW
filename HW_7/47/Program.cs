@@ -24,6 +24,6 @@ int m = int.Parse(Console.ReadLine()!);
 Console.WriteLine("Введите размер массива N: ");
 int n = int.Parse(Console.ReadLine()!);
 CreateArray(m,n);
-Console.WriteLine("");
+Console.WriteLine();
 
 

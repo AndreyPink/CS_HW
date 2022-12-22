@@ -16,16 +16,16 @@ for (int rows = 0; rows < matrix.GetLength(0); rows++)
         matrix[rows, columns] = new Random().Next(1,10);
         Console.Write($"{matrix[rows, columns]} ");
     }
-    Console.WriteLine("");
+    Console.WriteLine();
 }
 return matrix;
 }
 
-void SearchIndex(int[,] array, int index)
+void SearchPosition(int[,] array, int position)
 {
-    if(index%10 > array.GetLength(1) || index/10 > array.GetLength(0)) 
-    Console.WriteLine($"\nЧисла с позицией ({index/10}*{index%10}) в массиве нет");
-    else Console.WriteLine($"\nЧисло с позицией ({index/10}*{index%10}) = {array[index/10 - 1, index%10 - 1]}");
+    if(position%10 > array.GetLength(1) || position/10 > array.GetLength(0)) 
+    Console.WriteLine($"\nЧисла с позицией ({position/10}*{position%10}) в массиве нет");
+    else Console.WriteLine($"\nЧисло с позицией ({position/10}*{position%10}) = {array[position/10 - 1, position%10 - 1]}");
 }
 
 Console.WriteLine("Введите размер массива M*N (2 числа без пробела): ");
@@ -33,6 +33,6 @@ int size = int.Parse(Console.ReadLine()!);
 Console.WriteLine("Введите позицию элемента массива для поиска X*Y (2 цифры без пробела):"); 
 // ПОЗИЦИЯ != ИНДЕКС !!!
 int i = int.Parse(Console.ReadLine()!);
-Console.WriteLine("");
-SearchIndex(CreateArray(size/10, size%10), i);
-Console.WriteLine("");
+Console.WriteLine();
+SearchPosition(CreateArray(size/10, size%10), i);
+Console.WriteLine();

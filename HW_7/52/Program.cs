@@ -16,7 +16,7 @@ int[,] CreateArray(int a, int b)
             matrix[rows, columns] = new Random().Next(1, 10);
             Console.Write($"{matrix[rows, columns]} ");
         }
-        Console.WriteLine("");
+        Console.WriteLine();
     }
     return matrix;
 }
@@ -38,6 +38,6 @@ void Average(int[,] array)
 
 Console.WriteLine("Введите размер массива M*N (2 числа без пробела): ");
 int size = int.Parse(Console.ReadLine()!);
-Console.WriteLine("");
+Console.WriteLine();
 Average(CreateArray(size/10, size%10));
-Console.WriteLine("");
+Console.WriteLine();
