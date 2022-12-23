@@ -5,6 +5,6 @@
 
 int SumElem(int m, int n)
 {
-    return n > m ? n + SumElem(m, n - 1) : n;
+return n > m ? n + SumElem(m, n - 1) : n;
 }
 Console.WriteLine(SumElem(4, 8));
