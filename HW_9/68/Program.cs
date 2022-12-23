@@ -15,5 +15,5 @@ int Ackermann(int m, int n)
     else if (m > 0 && n == 0) return Ackermann(m - 1, 1);
     return Ackermann(m - 1, Ackermann(m, n - 1));
 }
-Console.WriteLine(Ackermann(3, 2));
+Console.WriteLine(Ackermann(3, 5));
 
