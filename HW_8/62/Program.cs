@@ -19,17 +19,16 @@ int[,] Spiral(int n)
 {
 
     int[,] array = new int[n, n];
+    int count;
     int rows = 0;
     int columns = 0;
     int elem = 1;
     while (n != 0)
     {
-        int count = 1;
-        while (n > count)
-        {
-            array[rows, columns++] = elem++;
-            count++;
-        } 
+  
+        for (count = 0; count < n - 1; count++) 
+        array[rows, columns++] = elem++;
+
         for (count = 0; count < n - 1; count++) 
         array[rows++, columns] = elem++;
 
@@ -41,7 +40,12 @@ int[,] Spiral(int n)
 
         rows++;
         columns++;
-        if (n < 2) n = 0;
+
+        if (n == 1)
+        {
+            array[rows - 1, columns - 1] = elem++;
+            n--;
+        }
         else n -= 2;
     }
     Console.WriteLine();
