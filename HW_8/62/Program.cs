@@ -23,6 +23,15 @@ int[,] Spiral(int n)
     int rows = 0;
     int columns = 0;
     int elem = 1;
+
+
+// 1   2   3   4
+// 12  13  14  5
+// 11  16  15  6
+// 10  9   8   7
+
+
+
     while (n != 0)
     {
   
@@ -52,4 +61,4 @@ int[,] Spiral(int n)
     return array;
 }
 
-PrintArray(Spiral(4));
+PrintArray(Spiral(9));
